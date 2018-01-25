@@ -9,6 +9,6 @@ let eventSchema = new Schema({
   urlImage: String
 });
 
-const Event = mongoose.model('Event', eventSchema)
+const Event = mongoose.model('Event', eventSchema);
 
-module.exports = Event
+module.exports = Event;

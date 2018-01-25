@@ -1,6 +1,9 @@
 const app = require('express')();
 const bodyParser = require('body-parser');
 const logger = require('morgan');
+const mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost/myapp');
 
 // Routes
 const events = require('./routes/events');
