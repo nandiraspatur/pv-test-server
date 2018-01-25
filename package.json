@@ -1,0 +1,15 @@
+{
+  "name": "pv-test-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nandiraspatur/pv-test-server.git",
+  "author": "Nandira Paturohman <nandirasp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.1",
+    "morgan": "^1.9.0"
+  }
+}
