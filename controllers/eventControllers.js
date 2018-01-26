@@ -18,17 +18,7 @@ const add = async (req, res) => {
   };
 };
 
-const update = (req, res) => {
-  res.send({pwd: 'update'})
-};
-
-const remove = (req, res) => {
-  res.send({pwd: 'delete'})
-};
-
 module.exports = {
   getAll,
-  add,
-  update,
-  remove
+  add
 }
