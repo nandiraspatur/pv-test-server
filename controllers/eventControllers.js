@@ -9,6 +9,15 @@ const getAll = async (req, res) => {
   };
 };
 
+const getOne = async (req, res) => {
+  try {
+    let event = await Event.findById(req.params.id);
+    res.send(event);
+  } catch (error) {
+    res.status(500).send(error);
+  };
+};
+
 const add = async (req, res) => {
   try {
     let addEvent = await Event.create(req.body);
@@ -20,5 +29,6 @@ const add = async (req, res) => {
 
 module.exports = {
   getAll,
+  getOne,
   add
 }
